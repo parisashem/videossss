@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    </link>
+    <title>Video Gallery</title>
+</head>
+<h1>Welcome to NewTube</h1>
+<body>
+    <div class="container">
+    <div class="videoone">
+        <iframe width="650" height="315" 
+        src="https://www.youtube.com/embed/Un_VvR_WqNs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+        <!-- View chat messages here -->
+        <div class="sub-container">
+            <div class="chat-header">Comments</div>
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-one">
+            <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+            <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <div class="containertwo">
+    <div class="videotwo">
+        <iframe width="650" height="315" 
+        src="https://www.youtube.com/embed/ExWtQqLLgPA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    
+        <!-- View chat messages here -->
+        <div class="sub-chat">
+            <div class="chat-heading">Comments</div>
+            <div class="comment-boxtwo" id="comment-box-msg"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-two">
+            <input type="text" class="chat-input-glass" id="glass-input" placeholder="Name" />
+            <input type="text" class="chat-input-write" id="write-input" placeholder="Message" />
+            <button id="enter-button">Send</button>
+        </div>
+    </div>
+    
+    <div class="containerthree">
+    <div class="videothree">
+        <iframe width="650" height="315" 
+        src="https://www.youtube.com/embed/tgpWUE3QgTQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+   
+        <!-- View chat messages here -->
+        <div class="sub-container chat-feed">
+            <div class="comment-title">Comments</div>
+            <div class="comment-boxthree" id="comment-box-three"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-three">
+            <input type="text" class="chat-input-identity" id="identity-input" placeholder="Name" />
+            <input type="text" class="chat-input-state" id="state-input" placeholder="Message" />
+            <button id="return-button">Send</button>
+        </div>
+    </div>
+
+    <div class="containerfour">
+    <div class="videofour">
+        <iframe width="650" height="315" 
+        src="https://www.youtube.com/embed/0rDbWz63wiQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    
+        <!-- View chat messages here -->
+        <div class="sub-container chat-feed">
+            <div class="comment-titlefour">Comments</div>
+            <div class="comment-boxfour" id="comment-box-four"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-four">
+            <input type="text" class="chat-input-names" id="names-input" placeholder="Name" />
+            <input type="text" class="chat-input-messages" id="messages-input" placeholder="Message" />
+            <button id="something-button">Send</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
